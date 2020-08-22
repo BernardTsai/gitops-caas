@@ -1,0 +1,39 @@
+linkerd2:
+  global:
+      # from files/ca.crt
+    identityTrustAnchorsPEM: |
+      -----BEGIN CERTIFICATE-----
+      MIIBlTCCATygAwIBAgIRAP5bpGRjk1Zf4C9DmUsdzFUwCgYIKoZIzj0EAwIwKTEn
+      MCUGA1UEAxMeaWRlbnRpdHkubGlua2VyZC5jbHVzdGVyLmxvY2FsMB4XDTIwMDgy
+      MjIxMTEzMFoXDTMwMDgyMDIxMTEzMFowKTEnMCUGA1UEAxMeaWRlbnRpdHkubGlu
+      a2VyZC5jbHVzdGVyLmxvY2FsMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE6VFC
+      s74AWEi8o+U7bkfzB4Jxzcj7QYUiyWeDe6yHYbgyc+DhTeSUleZjdX90SXCcRXjq
+      r0CrNz9kdeme4yXMc6NFMEMwDgYDVR0PAQH/BAQDAgEGMBIGA1UdEwEB/wQIMAYB
+      Af8CAQEwHQYDVR0OBBYEFG3wfuRe+k/4mqphozYteOG8Iy/XMAoGCCqGSM49BAMC
+      A0cAMEQCIBtoNP5B7UVwEe8wPu6NwXbDjU5d7Pu4r+BDWYNoafGOAiBM3oq/sLip
+      iZVAbzIUVDqVBRD3IT8E8yOr1SBQSwYG6g==
+      -----END CERTIFICATE-----
+  identity:
+    issuer:
+      tls:
+        # from files/issuer.crt
+        crtPEM: |
+          -----BEGIN CERTIFICATE-----
+          MIIBlDCCATugAwIBAgIQSg2NRIno5VcqJxYrUhqFVzAKBggqhkjOPQQDAjApMScw
+          JQYDVQQDEx5pZGVudGl0eS5saW5rZXJkLmNsdXN0ZXIubG9jYWwwHhcNMjAwODIy
+          MjExMTMwWhcNMjEwODIyMjExMTMwWjApMScwJQYDVQQDEx5pZGVudGl0eS5saW5r
+          ZXJkLmNsdXN0ZXIubG9jYWwwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAARCgzzA
+          h+/U+JJGgrDzFGKmTuh1w/Eia/dZW/UaoKJjHwGT87EOBa431MGSBrpKhhovpGi6
+          Mulrp65MPtL9Tp8qo0UwQzAOBgNVHQ8BAf8EBAMCAQYwEgYDVR0TAQH/BAgwBgEB
+          /wIBADAdBgNVHQ4EFgQU9eceossGTCtyhyLgTD2XnvZhKWswCgYIKoZIzj0EAwID
+          RwAwRAIgT9yxGqFrZ3F/UTUELBEFMKl4AK2O8Iehhmx0s332iZMCIEu0XOI8tia/
+          s2xnMdbeLCq6OKSTHGx/mhQaXrRhvWp7
+          -----END CERTIFICATE-----
+        # from files/issuer.key
+        keyPEM: |
+          -----BEGIN EC PRIVATE KEY-----
+          MHcCAQEEIFG8q6f1WpDBhQsjM0fA6/PQlvXJvVFVnCP5MlFMrw+0oAoGCCqGSM49
+          AwEHoUQDQgAEQoM8wIfv1PiSRoKw8xRipk7odcPxImv3WVv1GqCiYx8Bk/OxDgWu
+          N9TBkga6SoYaL6RoujLpa6euTD7S/U6fKg==
+          -----END EC PRIVATE KEY-----
+      crtExpiry: 2021-12-31T23:59:59Z
