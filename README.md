@@ -6,6 +6,8 @@ It will add linkerd to the CaaS cluster.
 Preparation
 -----------
 
+Ensure that the [step](https://smallstep.com/cli/) cli for creating certificates and keys has been installed.
+
 Create the required certificates and keys for linkerd2:
 
 ````
