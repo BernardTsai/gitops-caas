@@ -1,0 +1,5 @@
+certs/ca.crt
+certs/ca.key
+certs/issuer.crt
+certs/issuer.key
+helm/values.yaml

@@ -1,39 +1,39 @@
 linkerd2:
   global:
-      # from files/ca.crt
+      # ca.crt
     identityTrustAnchorsPEM: |
       -----BEGIN CERTIFICATE-----
-      MIIBlTCCATygAwIBAgIRAP5bpGRjk1Zf4C9DmUsdzFUwCgYIKoZIzj0EAwIwKTEn
-      MCUGA1UEAxMeaWRlbnRpdHkubGlua2VyZC5jbHVzdGVyLmxvY2FsMB4XDTIwMDgy
-      MjIxMTEzMFoXDTMwMDgyMDIxMTEzMFowKTEnMCUGA1UEAxMeaWRlbnRpdHkubGlu
-      a2VyZC5jbHVzdGVyLmxvY2FsMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE6VFC
-      s74AWEi8o+U7bkfzB4Jxzcj7QYUiyWeDe6yHYbgyc+DhTeSUleZjdX90SXCcRXjq
-      r0CrNz9kdeme4yXMc6NFMEMwDgYDVR0PAQH/BAQDAgEGMBIGA1UdEwEB/wQIMAYB
-      Af8CAQEwHQYDVR0OBBYEFG3wfuRe+k/4mqphozYteOG8Iy/XMAoGCCqGSM49BAMC
-      A0cAMEQCIBtoNP5B7UVwEe8wPu6NwXbDjU5d7Pu4r+BDWYNoafGOAiBM3oq/sLip
-      iZVAbzIUVDqVBRD3IT8E8yOr1SBQSwYG6g==
+      MIIBlTCCATugAwIBAgIQYxD7+D7FpydDld98gu0OzjAKBggqhkjOPQQDAjApMScw
+      JQYDVQQDEx5pZGVudGl0eS5saW5rZXJkLmNsdXN0ZXIubG9jYWwwHhcNMjAwODIz
+      MTAyNDE4WhcNMzAwODIxMTAyNDE4WjApMScwJQYDVQQDEx5pZGVudGl0eS5saW5r
+      ZXJkLmNsdXN0ZXIubG9jYWwwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAARsqJtM
+      zlsMMl5w8PvdpuS7b1i1tTwDcTqpHXzfyrIyLqvHBUlLSsEc8vOswXEdHI+K371r
+      h/QsXTQ3a5bgTsb4o0UwQzAOBgNVHQ8BAf8EBAMCAQYwEgYDVR0TAQH/BAgwBgEB
+      /wIBATAdBgNVHQ4EFgQU5VQwde5hTZHZJNfmfHl6O9YEjKcwCgYIKoZIzj0EAwID
+      SAAwRQIgYoHg99L+ESrZtgNoxB5OIdSnhspssKYdpqCw3LgNO4UCIQCrVaRlZYlo
+      LcVlYXO7kas31NEeb1v7+dJFDNZbMNZ7sg==
       -----END CERTIFICATE-----
   identity:
     issuer:
       tls:
-        # from files/issuer.crt
+        # issuer.crt
         crtPEM: |
           -----BEGIN CERTIFICATE-----
-          MIIBlDCCATugAwIBAgIQSg2NRIno5VcqJxYrUhqFVzAKBggqhkjOPQQDAjApMScw
-          JQYDVQQDEx5pZGVudGl0eS5saW5rZXJkLmNsdXN0ZXIubG9jYWwwHhcNMjAwODIy
-          MjExMTMwWhcNMjEwODIyMjExMTMwWjApMScwJQYDVQQDEx5pZGVudGl0eS5saW5r
-          ZXJkLmNsdXN0ZXIubG9jYWwwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAARCgzzA
-          h+/U+JJGgrDzFGKmTuh1w/Eia/dZW/UaoKJjHwGT87EOBa431MGSBrpKhhovpGi6
-          Mulrp65MPtL9Tp8qo0UwQzAOBgNVHQ8BAf8EBAMCAQYwEgYDVR0TAQH/BAgwBgEB
-          /wIBADAdBgNVHQ4EFgQU9eceossGTCtyhyLgTD2XnvZhKWswCgYIKoZIzj0EAwID
-          RwAwRAIgT9yxGqFrZ3F/UTUELBEFMKl4AK2O8Iehhmx0s332iZMCIEu0XOI8tia/
-          s2xnMdbeLCq6OKSTHGx/mhQaXrRhvWp7
+          MIIBljCCATygAwIBAgIRAMlZJ3pHvSyjS42DvF06hbIwCgYIKoZIzj0EAwIwKTEn
+          MCUGA1UEAxMeaWRlbnRpdHkubGlua2VyZC5jbHVzdGVyLmxvY2FsMB4XDTIwMDgy
+          MzEwMjQyMFoXDTIxMDgyMzEwMjQyMFowKTEnMCUGA1UEAxMeaWRlbnRpdHkubGlu
+          a2VyZC5jbHVzdGVyLmxvY2FsMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE9SYK
+          06oZtMrQBetA8hjmsWdZD6sJJ6L0RSB2BZE1aWEEf/RkE0Hr47pSSBAkbafGCSWI
+          MpfcksW24fRFICrKRaNFMEMwDgYDVR0PAQH/BAQDAgEGMBIGA1UdEwEB/wQIMAYB
+          Af8CAQAwHQYDVR0OBBYEFJfuu1WYedBHyps8/OTW60Z8nxxFMAoGCCqGSM49BAMC
+          A0gAMEUCIDARf1Uyq2R5RyT8pqF9YLf0OBLZsH/+epiLBBFdSpVvAiEAj1lo+2Rq
+          TeZ/mZmhS0RpfTlzOQUhvgyRD7ukpGVN9z8=
           -----END CERTIFICATE-----
-        # from files/issuer.key
+        # issuer.key
         keyPEM: |
           -----BEGIN EC PRIVATE KEY-----
-          MHcCAQEEIFG8q6f1WpDBhQsjM0fA6/PQlvXJvVFVnCP5MlFMrw+0oAoGCCqGSM49
-          AwEHoUQDQgAEQoM8wIfv1PiSRoKw8xRipk7odcPxImv3WVv1GqCiYx8Bk/OxDgWu
-          N9TBkga6SoYaL6RoujLpa6euTD7S/U6fKg==
+          MHcCAQEEIIetv3RaDv4bgJotkTNaRdFjaKKr0T/+J6NvEpSwn6kMoAoGCCqGSM49
+          AwEHoUQDQgAE9SYK06oZtMrQBetA8hjmsWdZD6sJJ6L0RSB2BZE1aWEEf/RkE0Hr
+          47pSSBAkbafGCSWIMpfcksW24fRFICrKRQ==
           -----END EC PRIVATE KEY-----
-      crtExpiry: 2021-12-31T23:59:59Z
+      crtExpiry: DATE
